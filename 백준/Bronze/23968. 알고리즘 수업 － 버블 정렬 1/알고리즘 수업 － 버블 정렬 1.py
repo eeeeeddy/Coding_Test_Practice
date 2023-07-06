@@ -1,7 +1,7 @@
 import sys
 
-# 시간 초과 해결을 위해 sys.stdin.readline() 사용
 n, k = map(int, sys.stdin.readline().split())
+
 arr = list(map(int, sys.stdin.readline().split()))
 
 # 교환 횟수를 저장하기위한 변수 생성
@@ -14,7 +14,7 @@ for i in range(n-1, 0, -1):
             arr[j], arr[j+1] = arr[j+1], arr[j]
             cnt += 1            # 교환 횟수 1 증가
         
-            if cnt == k:        # 교환 횟수가 k와 같으면 반복문 탈출
+            if cnt == k:                # 교환 횟수가 k와 같으면 반복문 탈출
                 print(arr[j], arr[j+1])
                 break
 
