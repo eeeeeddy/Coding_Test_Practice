@@ -5,7 +5,7 @@ arr = list(map(int, input().split()))
 # 교환 횟수를 저장하기위한 변수 생성
 cnt = 0 
 
-# index 4부터 1까지 반복문 수행
+# 인덱스 n-1부터 1까지 반복문 진행
 for i in range(n-1, 0, -1):
     Max = max(arr[:i+1])    # i가 감소하는 반복문을 실행하면서 각각 리스트의 최댓값 탐색
     idx = arr.index(Max)    # 최댓값의 인덱스
