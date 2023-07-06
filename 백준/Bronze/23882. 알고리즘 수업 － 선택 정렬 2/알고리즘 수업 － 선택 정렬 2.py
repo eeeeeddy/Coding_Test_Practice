@@ -1,7 +1,6 @@
 n, k = map(int, input().split())
 
 arr = list(map(int, input().split()))
-ans = ''
 
 # 교환 횟수를 저장하기위한 변수 생성
 cnt = 0 
