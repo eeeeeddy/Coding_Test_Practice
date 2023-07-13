@@ -17,7 +17,7 @@ def solution(s):
             tmp.append(s[i])
         # ')' 일 경우 스택의 마지막 문자가 '('인지 확인 후 맞다면 tmp 스택에서 '('을 pop
         else:
-            if tmp[-1] == '(':
+            if tmp[len(tmp)-1] == '(':
                 tmp.pop()
             # '(' 일 경우 tmp 스택에 추가
             else:
