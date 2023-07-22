@@ -23,4 +23,4 @@ class Solution:
             answer.append(i[0])
 
         # k개 만큼 출력
-        return answer[:k]
+        return answer[:k] 
