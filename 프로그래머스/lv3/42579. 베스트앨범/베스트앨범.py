@@ -34,3 +34,6 @@ def solution(genres, plays):
             count += 1
     
     return answer
+
+# 장르에 속한 곡이 1곡일때는 dic[i][1]의 길이가 이전에 더한 total까지 포함해서 2이기 때문에
+# 중간에 길이를 검사한 후 break 해주었다.
