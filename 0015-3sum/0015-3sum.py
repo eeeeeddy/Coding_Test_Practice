@@ -20,8 +20,8 @@ class Solution:
                     result.append([nums[i], nums[left], nums[right]])
                     while left < right and nums[left] == nums[left+1]:  # 중복된 두 번째 숫자는 건너뜁니다.
                         left += 1
-                    # while left < right and nums[right] == nums[right-1]:  # 중복된 세 번째 숫자는 건너뜁니다.
-                    #     right -= 1
+                    while left < right and nums[right] == nums[right-1]:  # 중복된 세 번째 숫자는 건너뜁니다.
+                        right -= 1
                     left += 1  # 두 번째 숫자를 오른쪽으로 이동합니다.
                     right -= 1  # 세 번째 숫자를 왼쪽으로 이동합니다.
 
